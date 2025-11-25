@@ -1,39 +1,19 @@
 
-/* .google-sans-flex-<uniquifier> {
-  font-family: "Google Sans Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "ROND" 0;
-} */
-
-/*
-colors
-primary dark: #202529
-primary light: #ffffff
-background-hover dark: #808080
-bright accent: orangered
-*/
-
 body {
     text-align: center;
     margin: 0;
     font-family: "Google Sans Flex", sans-serif;
-    display:flex;
+    display: flex;
     flex-direction: column;
     color: #202529;    
 }
 
 h1, h2, h3, p {
-    margin:0px;
+    margin: 0px;
 }
 
 .header-section {
-    display:flex;
+    display: flex;
     height: 600px;
 }
 
@@ -48,9 +28,9 @@ h1, h2, h3, p {
 }
 
 .header-title {
-    margin:200px 20px 0px;
+    margin: 200px 20px 0px;
     padding: 10px 20px 10px;
-    font-size:40px;
+    font-size: 40px;
     font-weight: 800;
 }
 
@@ -63,7 +43,7 @@ h1, h2, h3, p {
 
 .header-img {
     background-image: url("./images/header-bkg-img-chennaitemple.avif");
-    background-size:cover;
+    background-size: cover;
     width: 65%;
 }
 
@@ -102,12 +82,13 @@ h1, h2, h3, p {
 }
 
 .activity-card {
-    padding: 10px;;
+    padding: 10px;
     flex: 1;
     text-align: start;
 }
 
-.activity-card:hover {
+.activity-card:hover,
+.activity-card:focus-within {
     background-color: #808080;
 }
 
@@ -144,7 +125,8 @@ h1, h2, h3, p {
     transition: opacity 0.2s ease-in-out; 
 }
 
-.activity-card:hover .activity-cta {
+.activity-card:hover .activity-cta,
+.activity-card:focus-within .activity-cta {
     opacity: 1;
 }
 
