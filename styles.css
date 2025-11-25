@@ -103,7 +103,6 @@ h1, h2, h3, p {
 
 .activity-card {
     padding: 10px;;
-    background-color: white;
     flex: 1;
     text-align: start;
 }
@@ -228,6 +227,12 @@ h1, h2, h3, p {
     background-size: cover;
     height: 300px;
     flex: 35%;
+}
+.activity-img,
+.header-img,
+.guide-section-img {
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 a {
